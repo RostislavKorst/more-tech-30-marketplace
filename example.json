@@ -1,0 +1,36 @@
+{
+  "joins": [
+    {
+      "joinId": 1,
+      "first": {
+        "partner": "partner_1",
+        "dataset": "dataset_1"
+      },
+      "second": {
+        "partner": "partner_2",
+        "dataset": "dataset_2"
+      },
+      "on": "column_name",
+      "how": "inner"
+    },
+    {
+      "joinId": 2,
+      "first": {
+        "partner": "joinId",
+        "dataset": 1
+      },
+      "second": {
+        "partner": "partner_2",
+        "dataset": "dataset_2"
+      },
+      "on": "column_name",
+      "how": "inner"
+    }
+  ],
+  "filters": [
+    {
+      "column_name": "column_name",
+      "how": {"max": 10, "min": 5}
+    }
+  ]
+}
